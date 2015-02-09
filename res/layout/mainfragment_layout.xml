@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MainFragment 的布局文件  -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/rounded_corner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 主內容  -->
+    <RelativeLayout 
+        android:background="@drawable/rounded_corner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.ijiaban.tabslide.PagerSlidingTabStrip
+        android:id="@+id/maintabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_tab" />
+ 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/apager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/adlayoutmainfragment" />
+
+    <!-- 廣告位 ，以便以後添加  -->
+ <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_below="@id/maintabs"
+        android:id="@+id/adlayoutmainfragment">
+ </LinearLayout>
+</RelativeLayout>
+<!-- 側邊抽屜內容
+<ScrollView 
+    android:layout_gravity="left"
+    android:id="@+id/left_drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#50e0a7a7" > 
+<LinearLayout
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+         <TextView
+            android:id="@+id/histroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:text="历史记录"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:text="收藏夹"
+            android:textSize="16sp" />
+</LinearLayout>
+</ScrollView>
+ -->
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">教你如何做发型设计</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">释放刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">刷新中 …</string>
+    <string name="draweropen">open</string>
+    <string name="drawerclose">close</string>
+    <string name="name">视频名称</string> 
+    <string name="history">历史记录</string>
+    <string name="collect">收藏夹</string> 
+    <string name="searchresult">未找到搜索结果</string> 
+</resources>
