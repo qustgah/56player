@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounderconer2"
+    android:id="@+id/zhutiframelayout">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+       android:background="@drawable/rounderconer2"
+    android:id="@+id/zhutilayout">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adlayyout"></RelativeLayout>
+    <com.ijiaban.actionbar.pulltorefreshlib.PullToRefreshLayout 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/zhutifragment" >
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="15dp"
+        android:id="@+id/zhuti_list"></ListView>
+</com.ijiaban.actionbar.pulltorefreshlib.PullToRefreshLayout>
+
+</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" >
+    </FrameLayout>  
+    <!--
+        <fragment android:name="com.iiijiaban.u56player.fragment.ZhuTiFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>-->
+  
+    <!--
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="kajdfalkdjfalk;dfjaksd"
+        />    -->
+        <fragment
+            android:name="com.iiijiaban.u56player.fragment.VideoDetailFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/detail"/>
+   <!-- 
+
+    <main.java.com.github.pedrovgs.DraggablePanel
+        android:id="@+id/zhutidrag"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        draggable_panel:enable_horizontal_alpha_effect="false"
+        draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+        draggable_panel:top_fragment_margin_bottom="@dimen/top_fragment_margin"
+        draggable_panel:top_fragment_margin_right="@dimen/top_fragment_margin"
+        draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+        draggable_panel:y_scale_factor="@dimen/y_scale_factor" >
+    </main.java.com.github.pedrovgs.DraggablePanel>
+ -->
+</LinearLayout>
